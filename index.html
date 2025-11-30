@@ -1,0 +1,62 @@
+<html>
+    
+<head>
+<title>BlackJack</title>
+<meta name="author" content="Sruthi Mohandas">
+<meta name="description" content="Game developed as a part of my SJL001-Programming course assignment">
+<link rel="stylesheet" href="interface_styles.css">
+<script src="game_BlackJack.js" defer></script>
+</head>
+
+<body>
+
+<section class="gamecontainer">
+
+    <marquee width="60%" direction="left" height="50px">Welcome to BlackJack! </marquee>
+    <h1>BlackJack </h1>
+    <span class="game-info">Black Jack is played between the computer and the player.<br> The goal of the game is to achieve a score higher than the opponent, yet a score above 21 means an immediate loss. <br>The player starts and can ask as many cards as he/she wants, and can stop at any moment. </span>
+    <p ><em>Hover over for a Tip! </em></p>
+    <!-- Current Card Section -->
+    <div class="section current-card-section">
+        <div class="section-title">Current Card</div>
+        <div class="cardsarea" id="CurrentCard"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controlbuttons">
+        <button class="btn-start hidden" id="startGameBtn">Start Game</button>
+        <button class="btn-deal" id="cardBtn">Card</button>
+        <button class="btn-stop" id="stopBtn">Stop</button>
+    </div>
+    <div class="controlbuttons">                
+        <button class="btn-new-game hidden" id="newGameBtn">New Game</button>   
+    </div>
+
+    <!-- Result -->
+<div class="result" id="result"></div>
+
+    <!--Game Sections - for player and computer--> 
+    <div class="game-sections"> 
+    
+        <!-- Player Section -->
+        <div class="section">
+            <div class="section-title">Your Cards</div>
+            <div class="cardsarea" id="playerCards">
+                <div style="color: #999;">No cards yet</div>
+            </div>
+            <div class="score" id="playerScore">Score: 0</div>
+        </div>
+        
+        <!-- Computer Section -->
+        <div class="section hidden" id="computerSection">
+            <div class="section-title">Computer's Cards</div>
+            <div class="cardsarea" id="computerCards"></div>
+            <div class="score" id="computerScore">Score: 0</div>  
+        </div>
+            
+    </div>
+</section>   
+                    
+</body>
+
+</html>
